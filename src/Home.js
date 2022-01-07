@@ -1,6 +1,6 @@
 import Navbar from './Navbar';
 import Timeline from './Timeline';
-import Footers from "./Footers";
+import Footer from "./Footer";
 import Team from "./Team";
 
 
@@ -20,7 +20,7 @@ const Home = () => {
                     </div>
                     <Timeline />
                     <Team />
-                    <Footers />
+                    <Footer />
                 </div>
             </div>
 

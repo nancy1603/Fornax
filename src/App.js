@@ -1,10 +1,24 @@
-import Navbar from "./Navbar"
+import Home from "./Home";
+import {BrowserRouter as Router,Route,Routes} from "react-router-dom";
+
+import PreLoader from "./PreLoader";
+
+
 
 
 function App() {
   return (
     <div className="App">
-     
+     <Router>
+       <div>
+         <Routes>
+         <Route exact path="/" element={<Home />}>
+             </Route>
+             <Route exact path="/preloader" element={<PreLoader />}>
+             </Route>
+         </Routes>
+       </div>
+     </Router>
     
     </div>
   );
