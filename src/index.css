@@ -11,6 +11,20 @@
 body{
 background: #000028;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .navbar{
  
   width: 100%;
@@ -19,9 +33,6 @@ background: #000028;
   align-items: center;
   justify-content: space-between;
   padding: 0px 50px 0px 50px;
-  /*z-index: 1; 
-  top: 0px;
-  position: fixed;*/
 }
 .navbar ul{
   display: flex;
@@ -33,14 +44,8 @@ background: #000028;
   font-size: 20px;
   font-weight: 900;
   letter-spacing: 1px;
-  /* transition: 0.5s all ease-in-out; */
-
-
 }
-/* nav ul li a:hover{
-  border-bottom:2px solid #13ffbe;
 
-} */
 .navbar ul li::after{
   content: '';
   width: 0%;
@@ -116,7 +121,6 @@ background: #000028;
 
   }
   .navbar ul li::after{
-      /* content: ''; */
       width: 0%;
       height: 2px;
       background: #13ffbe;
@@ -130,3 +134,49 @@ background: #000028;
   }
 }
 
+
+
+
+
+
+
+
+
+.container::-webkit-scrollbar{
+    display: none;
+  }
+
+  .container{
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+
+.sign{
+    min-height: 100vh;
+    background-image: url("bgg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    padding: 30px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.container{
+
+    width: 90%;
+    height: calc(100vh - 60px);
+    -webkit-backdrop-filter: blur(5px);
+    background: rgba(255,255,255,0.01);
+    backdrop-filter: blur(5px);
+    -webkit-tap-highlight-color: transparent;
+    padding: 30px;
+    margin: 0 auto;
+    position: absolute;
+    border: 7px solid #2d4651;
+    overflow-x: hidden;
+    border-radius: 50px;  
+}
