@@ -18,7 +18,7 @@ function Navbar() {
         <li><a href="#about">About</a></li>
         <li><a href="#timeline">Timeline</a></li>
         <li><a href="#team">Team</a></li>
-        <li><a href="#logout">Logout</a></li>
+        <li><Link to="/logout">Logout</Link></li>
          <li><Link to="/signin">SignIn</Link></li>
     </ul>
     </div>
