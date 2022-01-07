@@ -141,6 +141,125 @@ background: #000028;
 
 
 
+.longlist {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 30px 0;
+    margin: 10px;
+    margin-top: 60px;
+  }
+  .longlist h2{
+    font-size: 2em;
+    padding: 10px;
+    color: cyan;
+    margin: 10px;
+  }
+  .timeline {
+    width: 90%;
+    max-width: 800px;
+    position: relative;
+  }
+  
+  .timeline ul {
+    list-style: none;
+  }
+  .timeline ul li {
+    padding: 10px;
+    
+    color: white;
+    border-radius: 10px;
+    margin: 10px;
+    margin-top: 15px;
+    -webkit-backdrop-filter: blur(5px);
+    background: rgba(255,255,255,0.08);
+    backdrop-filter: blur(5px);
+    -webkit-tap-highlight-color: transparent;
+    box-shadow: 20px 20px 50px rgba(0,0,0,0.5);
+  }
+  .timeline ul li:last-child {
+    margin-bottom: 0;
+  }
+  .timeline-content p {
+    font-size: 20px;
+    line-height: 25px;
+    font-family: 'Poppins', sans-serif;
+  }
+  .timeline-content{
+      padding: 13px 8px;
+  }
+  
+  @media only screen and (min-width: 940px) {
+    .timeline:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 2px;
+      height: 100%;
+      background-color: rgb(121, 107, 107);
+    }
+    .timeline ul li {
+      width: 50%;
+      position: relative;
+    }
+    .timeline ul li:nth-child(odd) {
+      float: left;
+      clear: right;
+      transform: translateX(-31px);
+      border-radius: 20px 0px 20px 20px;
+    }
+    .timeline ul li:nth-child(even) {
+      float: right;
+      clear: left;
+      transform: translateX(29px);
+      border-radius: 0px 20px 20px 20px;
+    }
+    .timeline ul li::before {
+      content: "";
+      position: absolute;
+      height: 20px;
+      width: 20px;
+      border-radius: 50%;
+      background-color: aqua;
+      top: 0px;
+    }
+    .timeline ul li:nth-child(odd)::before {
+      transform: translate(50%, -50%);
+      right: -21px;
+    }
+    .timeline ul li:nth-child(even)::before {
+      transform: translate(-50%, -50%);
+      left: -20px;
+    }
+    .timeline ul li:hover::before {
+      background-color: aqua;
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .container::-webkit-scrollbar{
     display: none;
