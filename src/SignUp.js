@@ -1,5 +1,5 @@
 import {Link} from "react-router-dom";
-import Footers from "./Footers";
+import Footer from "./Footer";
 const SignUp = () => {
     return ( 
         <div className="sign">
@@ -34,7 +34,7 @@ const SignUp = () => {
            <div className="footer"> <p>Already have account ?<span><Link to="/signin">  Sign In</Link></span></p></div>
        
     </div>
-    <Footers />
+    <Footer />
     </div>
     </div>
      );

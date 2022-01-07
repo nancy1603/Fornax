@@ -1,6 +1,6 @@
 
 import {Link} from "react-router-dom";
-import Footers from "./Footers";
+import Footer from "./Footer";
 const SignIn = () => {
     return(
         <div className="sign">
@@ -32,7 +32,7 @@ const SignIn = () => {
            <div className="footer"> <p>Don't have account ?<span><Link to="/signup">  Sign Up</Link></span></p></div>
        
     </div>
-    <Footers />
+    <Footer />
     </div>
     </div>
     );

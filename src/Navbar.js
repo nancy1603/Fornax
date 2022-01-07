@@ -1,4 +1,4 @@
-
+import {Link} from "react-router-dom";
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
@@ -19,7 +19,7 @@ function Navbar() {
         <li><a href="#timeline">Timeline</a></li>
         <li><a href="#team">Team</a></li>
         <li><a href="#logout">Logout</a></li>
-       
+         <li><Link to="/signin">SignIn</Link></li>
     </ul>
     </div>
    
