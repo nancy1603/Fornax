@@ -4,14 +4,27 @@ import PreLoader from "./PreLoader";
 import SignIn from "./SignIn";
 import SignUp from "./SignUp";
 import NotFound from "./NotFound";
-
+import {useState,useEffect} from "react";
 
 
 function App() {
+
+  const[loading,setLoading] = useState(false);
+  useEffect(() => {
+    setLoading(true);
+    setTimeout(() =>{
+      setLoading(false);
+    },4000)
+  }, [])
+
   return (
     <div className="App">
      <Router>
-       <div>
+     {
+       loading ?
+       (<PreLoader />)
+       :
+           (<div>
          <Routes>
          <Route exact path="/" element={<Home />}>
              </Route>
@@ -24,7 +37,9 @@ function App() {
              <Route exact path="/preloader" element={<PreLoader />}>
              </Route>
          </Routes>
-       </div>
+       </div>)
+     }
+       
      </Router>
     
     </div>
