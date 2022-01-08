@@ -2,7 +2,7 @@ import Navbar from './Navbar';
 import Timeline from './Timeline';
 import Footer from "./Footer";
 import Team from "./Team";
-
+import GoogleMaps from "./GoogleMaps";
 
 const Home = () => {
     return (
@@ -20,7 +20,8 @@ const Home = () => {
                     </div>
                     <Timeline />
                     <Team />
-                    <Footer />
+                    <Footer /> 
+                     <GoogleMaps />
                 </div>
             </div>
 
