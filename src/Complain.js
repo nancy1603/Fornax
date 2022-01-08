@@ -8,6 +8,8 @@ const Complain = () => {
     return (
         <div className="sign">
             <div className="container" style={{width:"70%"}}>
+
+
     <div className="navbar">
     <h2 style={{textAlign:"center",color:"cyan",margin:"10px",fontSize:"2em"}}>Complain</h2>
     <input type="checkbox" id="click" />
@@ -19,6 +21,9 @@ const Complain = () => {
             <li><Link to="/logout">Logout</Link></li>
          </ul>
      </div>
+
+
+
      <form>
             <input type="text" className="contact" placeholder="Name"  autoComplete="off"/>
             <input type="text" className="contact" placeholder="Location"  autoComplete="off"/>
@@ -35,6 +40,8 @@ const Complain = () => {
              
              <input type="submit" className="contact send" value="Submit"/>
         </form>
+                   
+                   
                    
                    <div style={{position:"relative",marginBottom:"30px"}}>
                         <GoogleMaps />
