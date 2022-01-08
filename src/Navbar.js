@@ -19,7 +19,6 @@ function Navbar() {
         <li><a href="#timeline">Timeline</a></li>
         <li><a href="#team">Team</a></li>
         <li><Link to="/logout">Logout</Link></li>
-         <li><Link to="/signin">SignIn</Link></li>
     </ul>
     </div>
    

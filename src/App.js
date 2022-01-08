@@ -26,16 +26,20 @@ function App() {
        :
            (<div>
          <Routes>
-         <Route exact path="/" element={<Home />}>
-             </Route>
-             <Route exact path="/signin" element={<SignIn />}>
-             </Route>
-             <Route exact path="*" element={<NotFound />}>
+         
+          <Route exact path="/signin" element={<SignIn />}>
              </Route>
              <Route exact path="/signup" element={<SignUp />}>
              </Route>
              <Route exact path="/preloader" element={<PreLoader />}>
              </Route>
+             <Route exact path="/" element={<Home />}>
+             </Route>
+            
+             <Route exact path="*" element={<NotFound />}>
+             </Route>
+             
+             
          </Routes>
        </div>)
      }
