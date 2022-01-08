@@ -14,7 +14,7 @@ function Navbar() {
     
     <ul>
        
-         <li><a href="#complain">Complain</a></li>
+         <li><Link to="/complain">Complain</Link></li>
         <li><a href="#about">About</a></li>
         <li><a href="#timeline">Timeline</a></li>
         <li><a href="#team">Team</a></li>

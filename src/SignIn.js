@@ -2,6 +2,7 @@
 import {Link} from "react-router-dom";
 import Footer from "./Footer";
 const SignIn = () => {
+
     return(
         <div className="sign">
         <div className="glowing">
@@ -23,9 +24,9 @@ const SignIn = () => {
       </div>
         <p>Sign In</p>
         <form>
-            <input type="email" className="contact" placeholder="Email" />
-            <input type="password" className="contact" placeholder="Password" />
-            <input type="submit" className="contact send" value="Login" />
+            <input type="email" className="contact" placeholder="Email"  autoComplete="off"/>
+            <input type="password" className="contact" placeholder="Password"  autoComplete="off"/>
+            <input type="submit" className="contact send" value="Login"/>
         </form>
        <div className="link">
            <div className="footer"> <p>Don't have account ?<span><Link to="/signup">  Sign Up</Link></span></p></div>

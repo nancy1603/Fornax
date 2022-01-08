@@ -2,7 +2,7 @@ import Navbar from './Navbar';
 import Timeline from './Timeline';
 import Footer from "./Footer";
 import Team from "./Team";
-import GoogleMaps from "./GoogleMaps";
+
 
 const Home = () => {
     return (
@@ -20,9 +20,9 @@ const Home = () => {
                     <Timeline />
                     <Team />
                     <Footer /> 
-                   <div style={{position:"relative",marginBottom:"30px"}}>
-                       <GoogleMaps />
-                    </div>
+                    {/*<div style={{position:"relative",marginBottom:"30px"}}>
+                        <GoogleMaps />
+                    </div>*/}
                 </div>
             </div>
             );
