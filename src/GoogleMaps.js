@@ -1,6 +1,20 @@
 import React, {Component} from "react";
 import {Map,Marker, GoogleApiWrapper} from 'google-maps-react';
 
+
+const mapStyles = {
+    position:"relative",
+    padding: "15px",
+    borderRadius:"20px",
+    maxWidth:"700px",
+    height: "60vh",
+    zIndex: "1 !important",
+    border:"2px solid cyan",
+    margin:"20px",
+    align:"center",
+    margin:"30px auto",
+    
+  }
 class GoogleMap extends Component {
     state = {
       showingInfoWindow: false,
@@ -27,7 +41,8 @@ class GoogleMap extends Component {
     render() {
       return (
         <Map google={this.props.google}
-            onClick={this.onMapClicked}>
+            onClick={this.onMapClicked}
+            style={mapStyles}>
           <Marker onClick={this.onMarkerClick}
                   name={'Current location'} />
    

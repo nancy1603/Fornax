@@ -6,12 +6,11 @@ import GoogleMaps from "./GoogleMaps";
 
 const Home = () => {
     return (
-        <div>
+        
             <div className="sign">
                 <div className="container">
                     <Navbar />
-                   
-                    <div className="about" id="about">
+                    <div className="about" id="about" style={{position:"relative"}}>
                         <h1>What does <span style={{color:"cyan"}}>Fornax</span> do?</h1>
                         <p style={{fontWeight:"700"}}>
                             It’s a website for smart city development. You can file a complain for your local problems. The site is accessible to everyone. It aim to reduce the time
@@ -21,12 +20,12 @@ const Home = () => {
                     <Timeline />
                     <Team />
                     <Footer /> 
-                     <GoogleMaps />
+                   <div style={{position:"relative",marginBottom:"30px"}}>
+                       <GoogleMaps />
+                    </div>
                 </div>
             </div>
-
-        </div>
-    );
+            );
 }
 
 export default Home;
