@@ -1,6 +1,6 @@
 import React, {Component} from "react";
 import {Map,Marker, GoogleApiWrapper} from 'google-maps-react';
-
+import { GoogleMapsAPI } from './client-config';
 
 const mapStyles = {
     position:"relative",
@@ -54,6 +54,6 @@ class GoogleMap extends Component {
 
 
   export default GoogleApiWrapper({
-    apiKey: "AIzaSyBwRnMLdGtg1mK7XgMPuHTn_fADIVcUMDU"
+    apiKey: GoogleMapsAPI
   })(GoogleMap)
 

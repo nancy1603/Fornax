@@ -3,7 +3,6 @@ import Timeline from './Timeline';
 import Footer from "./Footer";
 import Team from "./Team";
 
-
 const Home = () => {
     return (
         
@@ -20,9 +19,6 @@ const Home = () => {
                     <Timeline />
                     <Team />
                     <Footer /> 
-                    {/*<div style={{position:"relative",marginBottom:"30px"}}>
-                        <GoogleMaps />
-                    </div>*/}
                 </div>
             </div>
             );

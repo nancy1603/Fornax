@@ -348,8 +348,16 @@ form .contact{
     outline: none;
     color: #dae0e1;
 }
-
-
+form .text-area{
+  height: 150px;
+  padding-top: 10px;
+}
+form select option{
+  background-color: #000028;
+  font-size: 15px;
+  font-weight: 600;
+  
+}
 form .contact:focus::placeholder{
     top: -30px;
     
@@ -367,7 +375,8 @@ form .send{
     color: #dce2e2;
     transition: top 0.2s;
     position: relative;
-    
+    font-weight: 600;
+    font-size: 15px;
 }
 
 .footer p{
