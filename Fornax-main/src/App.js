@@ -10,12 +10,16 @@ import Complain from "./Complain";
 function App() {
 
   const[loading,setLoading] = useState(false);
+  const [login, setlogin] = useState(false)
   useEffect(() => {
     setLoading(true);
     setTimeout(() =>{
       setLoading(false);
     },4000)
   }, [])
+  useEffect(() => {
+    setlogin(localStorage.getItem("login"))
+  }, [login])
 
   return (
     <div className="App">
@@ -33,12 +37,13 @@ function App() {
              </Route>
              <Route exact path="/preloader" element={<PreLoader />}>
              </Route>
-             <Route exact path="/" element={<Home />}>
+             <Route exact path="*" element={<NotFound />}>
+             </Route>
+             <Route exact path="/" element={login?<Home/>:<SignIn/>}>
              </Route>
              <Route exact path="/complain" element={<Complain />}>
              </Route>
-             <Route exact path="*" element={<NotFound />}>
-             </Route>
+             
              
              
          </Routes>

@@ -3,6 +3,8 @@ import {Link} from "react-router-dom";
 import {useState,useEffect} from "react";
 import Footer from "./Footer";
 import { useNavigate } from "react-router-dom";
+
+
 const SignIn = () => {
     const[email,setEmail] = useState()
     const[password,setPassword]= useState()
@@ -25,11 +27,19 @@ const SignIn = () => {
         if (res.status === 440 || !data) {
             window.alert("Invalid Registratrion")
         } else {
-            window.alert("Registration Successfull");
-
-            navigate('/');
+            window.alert("Login Successfull");
+            console.log(data)
+            if (data.message === "Login Successfuly") {
+                localStorage.setItem('login',true)
+                navigate('/');
+            }else{
+                localStorage.setItem('login',false)
+                navigate('/signin')
+            }
         }
     }
+
+    
     return(
         <div className="sign">
         <div className="glowing">
@@ -53,7 +63,7 @@ const SignIn = () => {
         <form>
             <input type="email" className="contact" placeholder="Email"  autoComplete="off" value={email} onChange={(e)=>setEmail(e.target.value)}/>
             <input type="password" className="contact" placeholder="Password"  autoComplete="off" value={password} onChange={(e)=>setPassword(e.target.value)}/>
-            <input type="submit" className="contact send" value="Login" onClick={login}/>
+            <input type="button" className="contact send" value="Login" onClick={login}/>
         </form>
        <div className="link">
            <div className="footer"> <p>Don't have account ?<span><Link to="/signup">  Sign Up</Link></span></p></div>

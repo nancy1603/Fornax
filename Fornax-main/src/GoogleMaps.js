@@ -44,7 +44,7 @@ class GoogleMap extends Component {
             onClick={this.onMapClicked}
             style={mapStyles}>
           <Marker onClick={this.onMarkerClick}
-                  name={'Current location'} />
+                  name={'Delhi'} />
    
           
         </Map>
